@@ -8,7 +8,7 @@ A tweet reader for owncloud
 Place this app in **youowncloud/apps/**
 
 ## Requirements
- * ownCloud 8 or latery
+ * ownCloud 8 or later
  + you have to register an twitter and get twitter "Keys and Access Tokens"
  - At the moment you have to add those keys manually to the database table crated by the app
  
