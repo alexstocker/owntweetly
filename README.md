@@ -1,52 +1,16 @@
 # Own Tweetly
-Place this app in **owncloud/apps/**
+A tweet reader for owncloud
 
-## Building the app
+## Installation
+Place this app in **youowncloud/apps/**
 
-The app can be built by using the provided Makefile by running:
+## Requirements
+ you have to register an twitter and get twitter "Keys and Access Tokens"
+ At the moment you have to add those keys manually to the database table crated by the app
+ 
+## License
+You are free to use, modify and redistribute but not to sell in any way. 
+Please respect licence agreements included projects. (composer, twitteroauth)
 
-    make
-
-This requires the following things to be present:
-* make
-* which
-* tar: for building the archive
-* curl: used if phpunit and composer are not installed to fetch them from the web
-* npm: for building and testing everything JS, only required if a package.json is placed inside the **js/** folder
-
-The make command will install or update Composer dependencies if a composer.json is present and also **npm run build** if a package.json is present in the **js/** folder. The npm **build** script should use local paths for build systems and package managers, so people that simply want to build the app won't need to install npm libraries globally, e.g.:
-
-**package.json**:
-```json
-"scripts": {
-    "test": "node node_modules/gulp-cli/bin/gulp.js karma",
-    "prebuild": "npm install && node_modules/bower/bin/bower install && node_modules/bower/bin/bower update",
-    "build": "node node_modules/gulp-cli/bin/gulp.js"
-}
-```
-
-
-## Publish to App Store
-
-First get an account for the [App Store](http://apps.owncloud.com/) then run:
-
-    make appstore
-
-The archive is located in build/artifacts/appstore and can then be uploaded to the App Store.
-
-## Running tests
-You can use the provided Makefile to run all tests by using:
-
-    make test
-
-This will run the PHP unit and integration tests and if a package.json is present in the **js/** folder will execute **npm run test**
-
-Of course you can also install [PHPUnit](http://phpunit.de/getting-started.html) and use the configurations directly:
-
-    phpunit -c phpunit.xml
-
-or:
-
-    phpunit -c phpunit.integration.xml
-
-for integration tests
+## Contact
+If you have any questions please feel free to contact me owntweetly@html5live.at
