@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<info>
+    <id>owntweetly</id>
+    <name>Own Tweetly</name>
+    <description>My first ownCloud app</description>
+    <licence>AGPL</licence>
+    <author>ELExG</author>
+    <version>0.0.11</version>
+    <namespace>OwnTweetly</namespace>
+    <category>other</category>
+    <dependencies>
+        <owncloud min-version="8.0" />
+    </dependencies>
+</info>
