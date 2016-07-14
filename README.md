@@ -14,7 +14,7 @@ Place this app in **youowncloud/apps/**
  
 ## Todos
  - Add post tweet
- - Add background jobŷ
+ - Add background job
  - Add store keys from frontend to database table
  - Add search tweets by hashtag or whatever
  - Add some additional options like amount of requested tweets
